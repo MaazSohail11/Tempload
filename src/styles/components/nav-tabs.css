@@ -1,0 +1,28 @@
+/* Animated Nav Tabs — with HoverBorderGradient */
+.nav-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+/* HoverBorderGradient overrides for nav tabs */
+.nav-tab-hbg {
+  font-family: inherit;
+}
+
+.nav-tab-hbg-inner {
+  font-size: 1rem !important;
+  padding: 10px 24px !important;
+}
+
+/* Active tab — white highlight */
+.nav-tab-active .hover-border-gradient-animated {
+  opacity: 0.9;
+}
+
+.nav-tab-active .hover-border-gradient-inner {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}

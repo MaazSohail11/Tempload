@@ -1,0 +1,53 @@
+/* Hover Border Gradient */
+.hover-border-gradient-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: visible;
+  padding: 1px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  text-decoration: none;
+}
+
+.hover-border-gradient-container:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hover-border-gradient-inner {
+  position: relative;
+  z-index: 10;
+  background: rgba(10, 10, 10, 0.9);
+  padding: 8px 20px;
+  border-radius: inherit;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Animated gradient layer */
+.hover-border-gradient-animated {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: 0;
+  flex: none;
+}
+
+/* Solid background behind content */
+.hover-border-gradient-bg {
+  position: absolute;
+  z-index: 1;
+  inset: 2px;
+  border-radius: 9999px;
+  background: var(--bg-primary);
+}

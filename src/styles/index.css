@@ -1,0 +1,35 @@
+/* ===========================
+   TempLoad Design System
+   Master stylesheet
+   =========================== */
+
+/* Base — tokens, reset, typography, animations */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/animations.css';
+
+/* Layout — header, container, grid */
+@import './layout/header.css';
+@import './layout/container.css';
+@import './layout/grid.css';
+
+/* Components */
+@import './components/card.css';
+@import './components/button.css';
+@import './components/form.css';
+@import './components/toggle.css';
+@import './components/upload-zone.css';
+@import './components/file-list.css';
+@import './components/alert.css';
+@import './components/result-box.css';
+@import './components/code-block.css';
+@import './components/dotted-glow-bg.css';
+@import './components/nav-tabs.css';
+@import './components/logo-sparkle.css';
+@import './components/hover-border-gradient.css';
+@import './components/vanish-input.css';
+@import './components/file-upload-zone.css';
+@import './components/noise-background.css';
+@import './components/receive-page.css';
+@import './components/background-beams.css';

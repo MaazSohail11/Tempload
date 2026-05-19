@@ -1,0 +1,85 @@
+/* Vanish Input */
+.vanish-input-group {
+  margin-bottom: 20px;
+}
+
+.vanish-input-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.vanish-input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vanish-input-wrapper:focus-within {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.vanish-input-canvas {
+  position: absolute;
+  pointer-events: none;
+  top: 20%;
+  left: 8px;
+  transform: scale(0.5);
+  transform-origin: top left;
+  filter: invert(0);
+  opacity: 0;
+  padding-right: 20px;
+}
+
+.vanish-input-canvas.visible {
+  opacity: 1;
+}
+
+.vanish-input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 50;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: inherit;
+  padding: 0 16px 0 20px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+.vanish-input.text-transparent {
+  color: transparent;
+}
+
+.vanish-input-placeholder-area {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+.vanish-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 20px;
+  text-align: left;
+  width: calc(100% - 2rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}

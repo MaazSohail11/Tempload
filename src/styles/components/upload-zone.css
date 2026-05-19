@@ -1,0 +1,40 @@
+/* File Upload Zone */
+.upload-zone {
+  border: 2px dashed var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  text-align: center;
+  transition: var(--transition);
+  background: var(--bg-primary);
+  cursor: pointer;
+  position: relative;
+}
+
+.upload-zone:hover,
+.upload-zone.drag-active {
+  border-color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.upload-input-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.upload-zone:hover .upload-icon {
+  color: var(--accent-primary);
+  transform: translateY(-4px);
+}

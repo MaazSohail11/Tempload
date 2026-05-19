@@ -1,0 +1,12 @@
+/* Code / Pre Block */
+.pre-block {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  color: #e4e4e7;
+  line-height: 1.6;
+}

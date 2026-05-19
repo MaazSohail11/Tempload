@@ -1,0 +1,12 @@
+/* Dotted Glow Background — canvas container */
+.dotted-glow-bg {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.85;
+
+  /* Radial mask so edges fade to transparent */
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
+}

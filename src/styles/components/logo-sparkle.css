@@ -1,0 +1,43 @@
+/* Logo with sparkles effect */
+.logo-sparkle-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-sparkle-area {
+  position: absolute;
+  top: -16px;
+  left: -20px;
+  right: -20px;
+  bottom: -16px;
+  pointer-events: none;
+  z-index: 0;
+
+  /* Radial mask to fade sparkles at edges */
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+/* Gradient line beneath logo */
+.logo-gradient-line {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.6), transparent);
+}
+
+.logo-gradient-line-glow {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.6), transparent);
+  filter: blur(2px);
+}

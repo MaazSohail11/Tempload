@@ -1,0 +1,65 @@
+/* Receive page — compact card + circular verify button */
+
+.card-compact {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 28px;
+}
+
+.receive-input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.receive-input-row .vanish-input-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Circular verify / arrow button */
+.verify-circle-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.verify-circle-btn:hover:not(:disabled) {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
+}
+
+.verify-circle-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.verify-circle-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Spin animation for loading state */
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

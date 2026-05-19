@@ -1,0 +1,64 @@
+/* Animated File Upload Zone */
+.file-upload-zone-wrapper {
+  width: 100%;
+}
+
+.file-upload-zone {
+  border: 2px dashed var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.file-upload-zone:hover,
+.file-upload-zone.drag-active {
+  border-color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.file-upload-zone-icon {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.file-upload-zone:hover .file-upload-zone-icon {
+  color: var(--accent-primary);
+}
+
+.file-upload-zone-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.file-upload-zone-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* Animated file list */
+.file-upload-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.file-upload-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
