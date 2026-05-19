@@ -15,7 +15,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-API-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-▶_Try_Now-blueviolet?style=for-the-badge)](https://vault.maazsohail731.workers.dev)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-▶_Try_Now-blueviolet?style=for-the-badge)](#)
 
 </div>
 
@@ -206,7 +206,7 @@ Then open `.env.local` and paste:
 
 ```env
 # The URL of your Cloudflare Worker backend
-VITE_API_BASE_URL=https://vault.maazsohail731.workers.dev
+VITE_API_BASE_URL=https://your-worker.your-subdomain.workers.dev
 
 # The base URL of YOUR local or hosted frontend
 VITE_PUBLIC_BASE_URL=http://localhost:5173
@@ -215,7 +215,7 @@ VITE_PUBLIC_BASE_URL=http://localhost:5173
 VITE_MAX_MB=500
 ```
 
-> ⚠️ **IMPORTANT**: Do NOT change `VITE_API_BASE_URL` unless you're deploying your own Worker backend. The public Worker at `vault.maazsohail731.workers.dev` is the live API.
+> ⚠️ **IMPORTANT**: Set `VITE_API_BASE_URL` to your own Cloudflare Worker URL. You must deploy your own backend — see the Backend section below.
 
 > ⚠️ `.env.local` is in `.gitignore` and will never be pushed to GitHub. Keep it secret.
 
